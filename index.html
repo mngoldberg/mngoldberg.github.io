@@ -1,61 +1,37 @@
 ---
 layout: default
-title: Maddie Goldberg
+title: Home
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <style>
-  body {
-    background-color: #edf5ec;
-    color: #333333; /* Main body text */
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: auto;
-    padding: 2em;
-  }
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-  h1, h2 {
-    color: #2e6049; /* Header color */
-    text-align: center;
-  }
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-  a {
-    color: #295a53; /* Link color */
-    text-decoration: none;
-  }
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
 
-  a:hover {
-    text-decoration: underline;
-  }
-
-  img {
-    display: block;
-    margin: 0 auto;
-  }
-</style>
-</head>
-<body>
-  <h1>Welcome to My Website!</h1>
-  <p>Hi! I am <b>Maddie Goldberg</b></p>
-  <br>
-  <p>Developmental Cognitive Neuroscience PhD student at the University of Oregon </p>
-  <br>
-  <p>My work primarily focuses on reward-related neuroendocrine relationships across adoelscence, particularly how adrenal androgens and gonadal steroids partly affect reward-related brain function and drive decision-making. I recieved my B.S. in Psychology (with Honors) and additional Applied Statitstics and Sociology minors at the University of Pittsburgh. I also recieved a competative 2-year post-baccalaureate IRTA Fellowship from the National Institutes of Mental Health within the Sections on Behavioral Endocrinology and Integrative Neuroscience.</p>
-  <br>
-  <p> Outside of work I love to swim, bike, run (no triatholons yet...), and read! </p>
-
-  <h2>Recent Work</h2>
-  <ul>
-    <li><a href="#">Link to Project 1</a></li>
-    <li><a href="#">Link to Research Paper</a></li>
-    <li><a href="#">Link to CV or Bio</a></li>
-  </ul>
-
-  <h2>Contact</h2>
-  <p>Email: mgoldber@uoregon.edu</p>
-</body>
-</html>
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
