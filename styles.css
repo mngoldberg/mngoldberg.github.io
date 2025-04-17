@@ -36,14 +36,15 @@ h2 {
     font-size: 2rem;
 }
 
-/* Make sure the image container allows scrolling */
+/* CV container that allows scrolling */
 .cv-container {
     width: 100%;
-    height: 500px; /* Adjust as needed */
-    overflow-y: scroll; /* Enables vertical scrolling */
+    max-height: 600px; /* Set the height of the container so that it becomes scrollable when content exceeds */
+    overflow-y: auto; /* Allows vertical scrolling when content exceeds the max height */
+    border: 1px solid #ddd; /* Optional: Add a border for styling */
 }
 
-/* Add smooth scroll */
+/* Scrollbar styling */
 .cv-container::-webkit-scrollbar {
     width: 8px;
 }
