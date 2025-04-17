@@ -36,25 +36,32 @@ h2 {
     font-size: 2rem;
 }
 
-/* CV container that allows scrolling */
+/* Ensure the PDF iframe is responsive and scrollable */
 .cv-container {
     width: 100%;
-    max-height: 600px; /* Set the height of the container so that it becomes scrollable when content exceeds */
-    overflow-y: auto; /* Allows vertical scrolling when content exceeds the max height */
-    border: 1px solid #ddd; /* Optional: Add a border for styling */
+    max-width: 1200px;  /* Optional: Set max width for large screens */
+    margin: 0 auto;     /* Centers the container */
+    overflow: hidden;   /* Prevents overflow beyond container */
 }
 
-/* Scrollbar styling */
-.cv-container::-webkit-scrollbar {
-    width: 8px;
+.cv-container iframe {
+    width: 100%;
+    height: 600px;      /* Adjust as needed */
+    border: none;       /* Remove border around iframe */
+    display: block;     /* Ensures block-level formatting */
+    margin: 0 auto;     /* Centers iframe within container */
 }
 
-.cv-container::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 10px;
+/* Add some styling for better viewing of the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
 }
 
-.cv-container::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+footer a {
+    color: #ffcc00; /* Bright color for links */
+    text-decoration: none;
 }
 

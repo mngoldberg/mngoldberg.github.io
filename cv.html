@@ -22,9 +22,13 @@
 
     <section class="cv">
         <h2>My Curriculum Vitae</h2>
-        <!-- Wrap the CV image with the cv-container class to enable scrolling -->
+        <!-- Scrollable container for embedded PDF -->
         <div class="cv-container">
-            <img src="GoldbergM_CV_041725.png" alt="My CV" class="cv-img">
+            <!-- Embed PDF with scrollability -->
+            <iframe src="GoldbergM_CV_041725.pdf" width="100%" height="600px" style="border:none;">
+                <!-- Provide alternative text for browsers that don't support iframes -->
+                Your browser does not support iframes. Please download the CV to view it.
+            </iframe>
         </div>
     </section>
 
