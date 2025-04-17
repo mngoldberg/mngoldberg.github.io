@@ -1,26 +1,25 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+title: Madeleine Goldberg
+description: >
+  A brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
+  Made by @mdo, customized by Madeleine Goldberg.
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: true
+# Your GitHub Pages site URL
+url: "https://mngoldberg.github.io"
+baseurl: ""
 
-# Setup
-title:            Madeleine Goldberg
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
-baseurl:          /
+# Theme setup
+remote_theme: poole/hyde
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name: Madeleine Goldberg
+  url: https://mngoldberg.github.io
 
-paginate:         5
+# Pagination
+paginate: 5
 
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/poole/hyde
+# Markdown rendering
+markdown: kramdown
+highlighter: rouge
