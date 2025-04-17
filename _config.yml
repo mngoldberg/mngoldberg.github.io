@@ -1,25 +1,11 @@
 title: Madeleine Goldberg
-description: >
-  A brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content.
-  Made by @mdo, customized by Madeleine Goldberg.
-
-# Your GitHub Pages site URL
-url: "https://mngoldberg.github.io"
+description: Personal website
 baseurl: ""
+url: "https://mngoldberg.github.io"
 
-# Theme setup
 remote_theme: poole/hyde
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
 
-author:
-  name: Madeleine Goldberg
-  url: https://mngoldberg.github.io
-
-# Pagination
-paginate: 5
-
-# Markdown rendering
 markdown: kramdown
 highlighter: rouge
+
+paginate: 5
