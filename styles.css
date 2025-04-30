@@ -3,11 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #eeeeee;
+    color: #4a4a4a;
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #899fc6;
+    color: #eeeeee;
     padding: 10px 0;
     text-align: center;
 }
@@ -23,7 +25,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #eeeeee;
     text-decoration: none;
 }
 
@@ -36,32 +38,111 @@ h2 {
     font-size: 2rem;
 }
 
-/* Ensure the PDF iframe is responsive and scrollable */
-.cv-container {
-    width: 100%;
-    max-width: 1200px;  /* Optional: Set max width for large screens */
-    margin: 0 auto;     /* Centers the container */
-    overflow: hidden;   /* Prevents overflow beyond container */
+.cv-pdf {
+    width: calc(100% - 220px);  /* Full width minus sidebar width */
+    height: 75vh;  /* Adjust vertical height if necessary */
+    border: none;
+    display: block;
+    margin-left: 220px;
 }
 
-.cv-container iframe {
-    width: 100%;
-    height: 600px;      /* Adjust as needed */
-    border: none;       /* Remove border around iframe */
-    display: block;     /* Ensures block-level formatting */
-    margin: 0 auto;     /* Centers iframe within container */
+.cv {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
 
 /* Add some styling for better viewing of the footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #899fc6;
+    color: #eeeeee;
     text-align: center;
     padding: 10px 0;
 }
 
 footer a {
-    color: #ffcc00; /* Bright color for links */
+    color: #ffcc66; /* Bright color for links */
     text-decoration: none;
+}
+
+.profile-pic {
+    width: 100px;  /* Adjust size as needed */
+    height: 100px;
+    border-radius: 75%;  /* Makes it circular */
+    object-fit: cover;
+    border: 2px solid #fff; /* Optional: border around image */
+    box-shadow: 0 0 5px rgba(0,0,0,0.2); /* Optional: subtle shadow */
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #899fc6;
+    color: #eeeeee;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.sidebar img.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.sidebar nav ul li a {
+  color: #eeeeee;
+  text-decoration: none;
+  padding: 6px 0;
+  display: block;
+}
+
+.sidebar nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+.main-content {
+    margin-left: 220px;  /* same width as sidebar */
+    padding: 20px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #899fc6;
+  color: #eeeeee;
+  font-weight: bold;
+  padding: 4px 10px;
+  margin: 4px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.badge-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
 }
 
