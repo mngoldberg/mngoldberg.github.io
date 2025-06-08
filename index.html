@@ -3,76 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madeleine Goldberg's Website</title>
+    <title>Madeleine Goldberg Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-<div class="sidebar">
-    <img src="maddie.jpg" alt="Profile Picture" class="profile-pic">
-   <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="cv.html">CV</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="random-things.html">Random Things</a></li>
-    <li><a href="https://bsky.app/profile/maddiegoldberg.bsky.social" target="_blank">🦋 Bluesky</a></li>
-    <li><a href="https://uodsnlab.com" target="_blank">🧠 DSN Lab</a></li>
-    <li><a href="https://psychology.uoregon.edu" target="_blank">🏫 UO Psychology</a></li>
-  </ul>
-</nav>
-
-</div>
-
-<div class="main-content">
     <header>
-        <h1>Hello!</h1>
+        <nav>
+            <div class="left">
+                <a href="#about-section">Madeleine N. Goldberg</a>
+            </div>
+            <div class="right">
+                <a href="#about-section">About</a>
+                <!-- <a href="#experience-section">Experience</a> -->
+                <a href="#projects-section">Projects</a>
+                <a href="#skills-section">Skills</a>
+                <a href="#leave-message-section">Leave a Message!</a>
+            </div>
+        </nav>
     </header>
-<main>
-    <section class="home-blurb">
-  <h1 style="text-align:center;">👋 Hi, I’m Maddie!</h1>
-  <p style="text-align:center;">
-    PhD student studying reward-related neuroendocrine relationships across adolescence <br>
-    🔬 Neuroscience | 📊 Stats modeling | 🌱 Longitudinal data
-  </p>
-<div style="text-align:center;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mngoldberg&layout=compact&theme=gruvbox&langs_count=6" alt="Top Languages Chart" />
-</div>
-  <h2 style="text-align:center;">🔬 What I Use GitHub For</h2>
-    <li style="text-align:center;">Reproducible research & analysis pipelines</li>
-    <li style="text-align:center;">Sharing code and tools for modeling complex developmental data</li>
-    <li style="text-align:center;">Learning & contributing to open science</li>
-    <li style="text-align:center;">(Eventually!) communicating science more accessibly</li>
-  <h2 style="text-align:center;">🌍 Languages I Know</h2>
+    <section id="about-section">
+        <h2>Hi I'm Maddie :)</h2>
+        <div class="headshot">
+            <picture>
+                <source srcset="images/myheadshot.jpeg" type="image/jpeg">
+                <img src="images/myheadshot.jpeg" alt="headshot">
+            </picture>
+        </div>
+        <div class="bio">
+            <p>
+                Hi, I'm Maddie! I'm a Ph.D. student in Developmental Psychology at the University of Oregon studying how hormones shape reward-related brain function, decision-making, and social motivation during adolescence. I use longitudinal data, fMRI, and advanced quantitative methods to better understand adolescent brain and behavior.
+            </p>
+            <br>
+            <p>
+                Outside of research, I enjoy triathlon sports, reading, cooking, and watching the UEFA Champions League!
+            </p>
+        </div>
+        <div class="social-links">
+            <a href="https://scholar.google.com/citations?user=tMm9Ll8AAAAJ&hl=en&oi=ao" target="_blank">
+                <i class="fa-brands fa-google-scholar"></i>
+            </a>
+            <a href="https://www.github.com/mngoldberg" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/madeleine-goldberg-a1bb37175" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="hhttps://bsky.app/profile/maddiegoldberg.bsky.social" target="_blank">
+                <i class="fa-brands fa-bluesky"></i>
+            </a>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section id="projects-section">
+        <h2>Projects</h2>
+    
+        <!-- Software Projects Subsection -->
+        <div class="project-subsection">
+            <h3>Software</h3>
+            <div #swiperRef="" class="swiper card-swiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <p>coming soon :)</p>
+                   
+                </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Design Projects Subsection -->
+        <div class="project-subsection">
+            <h3>Design</h3>
+                <div #swiperRef="" class="swiper card-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p>coming soon :)</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>    
+    <div class="divider"></div>
+    <section id="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <i class="devicon-r-plain"></i>
+            <i class="devicon-bash-plain"></i>
+            <i class="devicon-latex-original"></i>
+            <i class="devicon-jupyter-plain-wordmark"></i>
+            <i class="devicon-kaggle-original-wordmark"></i>
+            <i class="devicon-html5-plain-wordmark"></i>
+            <i class="fa-brands fa-python"></i>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section id="leave-message-section">
+        <h2>Leave a Message!</h2>
+        <p>coming soon :)</p>
+    </section>
 
-  <h3 style="text-align:center;">💻 Programming</h3>
-  <p>
-  <div class="badge-container">
-    <span class="badge">R</span>
-    <span class="badge">Shell</span>
-    <span class="badge">CSS</span>
-    <span class="badge">HTML</span>
-    <span class="badge">MATLAB</span>
-    </div>
-  </p>
-  <h3 style="text-align:center;">🗣️ Spoken</h3>
-  <p>
-   <div class="badge-container">
-    <span class="badge">English</span>
-    <span class="badge">Spanish</span>
-    <span class="badge">French</span>
-    </div>
-  </p>
-
-  <h2 style="text-align:center;">✨ A Little Extra</h2>
-  <p style="text-align:center;">
-    Outside the lab, I’m usually out running, biking, or swimming (no triathlons… yet). I speak English, some Spanish, and a bit of French.
-  </p>
-</section>
-
-</main>
-
+    <!-- Swiper JS -->
     <footer>
-        <p>Contact me at <a href="mailto:mgoldber@uoregon.edu">mgoldber@uoregon.edu</a> and my <a href="https://github.com/mngoldberg">GitHub</a></p>
+        <p>&copy; <span id="year"></span> Steph Ran. All Rights Reserved.</p>
     </footer>
-</body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Automatically update the copyright year
+            document.getElementById('year').textContent = new Date().getFullYear();
+    
+            // Initialize Swiper
+            const swiper = new Swiper(".card-swiper", {
+                centeredSlides: false,
+                spaceBetween: 0,
+                slidesPerView: 'auto'
+            });
+        });
+    </script>
+  </body>
 </html>
